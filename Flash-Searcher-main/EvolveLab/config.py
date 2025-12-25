@@ -107,6 +107,12 @@ DEFAULT_CONFIG = {
             "max_neg_examples": 1,
             "prune_threshold": 0.3,
         },
+        MemoryType.DIONYSUS: {
+            # Dionysus config is loaded from dionysus_config.py via environment
+            # These are fallback/local-cache settings only
+            "local_cache_dir": "./storage/dionysus/cache",
+            "fallback_enabled": True,
+        },
         # add new memory type upside this line
 }
 }
